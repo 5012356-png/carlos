@@ -1,0 +1,27 @@
+Algoritmo EcuacionCuadratica
+	//declaramos las varisbe 
+	Definir a, b, x1, x2, rz, denominador Como Entero
+	//lectura de las variables a, b y c
+	Escribir "Digite el valor de a:"
+	leer a
+	Escribir "Digiite el valor de b:"
+	leer b 
+	Escribir "Digite el valor de c:"
+	leer c
+	
+	//proceso -Calculamos la ecuación cuadrática
+	rz = b ^ 2 - 4 * a * c
+	denominador = 2 * a
+	si rz < 0 Entonces
+		Escribir "No se  puede calcular raices imaginarias "
+	SiNo 
+		si denominador ==0 Entonces
+			Escribir "División por 0"
+		SiNo 
+			x1 =(-b + (rz) ^ 0.5) / denominador 
+			x2 =(-b - (rz) ^ 0.5) / denominador 
+			Escribir "x1 =", x1
+			Escribir "x2 =", x2
+		FinSi
+	FinSi
+FinAlgoritmo
